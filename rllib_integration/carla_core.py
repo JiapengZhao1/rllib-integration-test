@@ -64,7 +64,8 @@ class CarlaCore:
 
     def init_server(self):
         """Start a server on a random port"""
-        self.server_port = random.randint(15000, 32000)
+        #self.server_port = random.randint(15000, 32000)
+        self.server_port = 2000
 
         # Ray tends to start all processes simultaneously. Use random delays to avoid problems
         time.sleep(random.uniform(0, 1))
