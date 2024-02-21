@@ -12,7 +12,7 @@ import argparse
 import yaml
 
 import ray
-from ray.rllib.algorithms.dqn,dqn import DQNConfig
+from ray.rllib.algorithms.dqn.dqn import DQNConfig
 
 from rllib_integration.carla_env import CarlaEnv
 from rllib_integration.carla_core import kill_all_servers
@@ -54,7 +54,7 @@ def main():
         ray.init()
 
         # Restore agent
-        agent = DQNTrainer(env=CarlaEnv, config=args.config)
+        agent = DQNConfig(env=CarlaEnv, config=args.config)
         agent.restore(args.checkpoint)
 
         # Initalize the CARLA environment
