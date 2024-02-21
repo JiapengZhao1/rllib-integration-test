@@ -9,10 +9,10 @@
 import torch
 import os
 
-from ray.rllib.algorithms.dqn.dqn import DQNConfig
+from ray.rllib.agents.dqn import DQNTrainer
 
 
-class CustomDQNTrainer(DQNConfig):
+class CustomDQNTrainer(DQNTrainer):
     """
     Modified version of DQNTrainer with the added functionality of saving the torch model for later inference
     """
