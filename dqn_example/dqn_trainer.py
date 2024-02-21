@@ -9,7 +9,7 @@
 import torch
 import os
 
-from ray.rllib.agents.dqn import DQNTrainer
+from ray.rllib.algorithms.dqn import DQNTrainer
 
 
 class CustomDQNTrainer(DQNTrainer):

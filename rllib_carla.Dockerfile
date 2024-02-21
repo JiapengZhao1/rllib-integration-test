@@ -128,8 +128,8 @@ RUN mkdir -p /home/lego_carla/src && cd /home/lego_carla/src \
     && git clone https://github.com/JiapengZhao1/rllib-integration-test.git
     #&& cd ./rllib-integration
 
-RUN cd /home/lego_carla/src/rllib-integration \
+RUN cd /home/lego_carla/src/rllib-integration-test \
     && pip3 install -r requirements.txt 
 
-RUN cd /home/lego_carla/src/rllib-integration \ 
+RUN cd /home/lego_carla/src/rllib-integration-test \ 
     && pip3 install -r ./dqn_example/dqn_requirements.txt
