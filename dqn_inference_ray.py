@@ -12,7 +12,7 @@ import argparse
 import yaml
 
 import ray
-from ray.rllib.algorithms.dqn import DQNTrainer
+from ray.rllib.algorithms.dqn,dqn import DQNConfig
 
 from rllib_integration.carla_env import CarlaEnv
 from rllib_integration.carla_core import kill_all_servers
